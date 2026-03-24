@@ -1,0 +1,2 @@
+recursive-include symbiose_reports *.json *.md *.py *.js *.txt *.css *.html *.csv *.png *.jpg *.svg *.ico
+recursive-exclude symbiose_reports *.pyc

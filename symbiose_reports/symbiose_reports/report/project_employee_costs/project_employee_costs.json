@@ -1,0 +1,43 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "doctype": "Report",
+ "filters": [],
+ "is_standard": "Yes",
+ "letter_head": "",
+ "module": "Symbiose Reports",
+ "name": "Project – Employee costs",
+ "prepared_report": 0,
+ "ref_doctype": "Timesheet",
+ "reference_report": "",
+ "report_name": "Project – Employee costs",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Projects User"
+  },
+  {
+   "role": "Projects Manager"
+  },
+  {
+   "role": "Technicien"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "Stagiaire"
+  },
+  {
+   "role": "Quality Manager"
+  },
+  {
+   "role": "Logisticien"
+  },
+  {
+   "role": "Employee Self Service"
+  }
+ ]
+}
