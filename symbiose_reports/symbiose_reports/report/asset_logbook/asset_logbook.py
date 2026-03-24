@@ -198,7 +198,5 @@ def get_data(conditions=None, filters=None):
         """
     )
 
-    query = "
-UNION
-".join(unions)
+    query = "\nUNION\n".join(unions)
     return frappe.db.sql(query, filters or {}, as_dict=True)
