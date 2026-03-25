@@ -1,4 +1,4 @@
-frappe.query_reports["Project – Employee costs"] = {
+frappe.query_reports["Project Employee costs"] = {
     filters: [
         {
             fieldname: "project",

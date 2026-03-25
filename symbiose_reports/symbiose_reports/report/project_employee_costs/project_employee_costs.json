@@ -8,11 +8,11 @@
  "is_standard": "Yes",
  "letter_head": "",
  "module": "Symbiose Reports",
- "name": "Project – Employee costs",
+ "name": "Project Employee costs",
  "prepared_report": 0,
  "ref_doctype": "Timesheet",
  "reference_report": "",
- "report_name": "Project – Employee costs",
+ "report_name": "Project Employee costs",
  "report_type": "Script Report",
  "roles": [
   {
