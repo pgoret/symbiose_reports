@@ -1,4 +1,4 @@
-frappe.query_reports["Project Employee costs"] = {
+frappe.query_reports["Project Profitability Report"] = {
     filters: [
         {
             fieldname: "project",
@@ -16,13 +16,15 @@ frappe.query_reports["Project Employee costs"] = {
             fieldname: "from_date",
             label: __("From Date"),
             fieldtype: "Date",
-            default: moment().subtract(6, "month").startOf("month").format("YYYY-MM-DD"),
+            default: frappe.datetime.month_start(
+                frappe.datetime.add_months(frappe.datetime.get_today(), -6)
+            ),
         },
         {
             fieldname: "to_date",
             label: __("To Date"),
             fieldtype: "Date",
-            default: moment().endOf("month").format("YYYY-MM-DD"),
+            default: frappe.datetime.month_end(frappe.datetime.get_today()),
         },
         {
             fieldname: "details",
