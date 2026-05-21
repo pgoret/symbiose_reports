@@ -6,3 +6,11 @@ app_email = "support@caconsultants.be"
 app_license = "MIT"
 
 required_apps = ["frappe", "erpnext"]
+
+permission_query_conditions = {
+    "Diffusion": "symbiose_reports.permissions.diffusion_query_conditions",
+}
+
+has_permission = {
+    "Diffusion": "symbiose_reports.permissions.diffusion_has_permission",
+}
