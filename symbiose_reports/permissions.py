@@ -6,6 +6,7 @@ import frappe
 DIFFUSION_DOCTYPE = "Diffusion"
 DIFFUSION_FIELDNAME = "diffusion"
 PRIVILEGED_ROLES = {"System Manager", "Quality Manager", "Coordinateur Qualit\u00e9"}
+READ_PERMISSION_TYPES = {None, "read", "select", "print", "email", "export", "report"}
 
 
 def _quote_identifier(value: str) -> str:
@@ -101,6 +102,9 @@ def diffusion_has_permission(
     allowed_roles = _get_allowed_roles(doc, child_doctype, role_fieldname)
 
     if user_roles.intersection(allowed_roles):
+        if permission_type in READ_PERMISSION_TYPES:
+            return True
+
         return None
 
     return False
