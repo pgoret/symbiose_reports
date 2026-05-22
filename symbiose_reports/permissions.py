@@ -5,7 +5,7 @@ import frappe
 
 DIFFUSION_DOCTYPE = "Diffusion"
 DIFFUSION_FIELDNAME = "diffusion"
-PRIVILEGED_ROLES = {"System Manager", "Quality Manager", "Coordinateur Qualit\u00e9"}
+PRIVILEGED_ROLES = {"Quality Manager", "Coordinateur Qualit\u00e9"}
 READ_PERMISSION_TYPES = {None, "read", "select", "print", "email", "export", "report"}
 
 
